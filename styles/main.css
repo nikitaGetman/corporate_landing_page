@@ -250,7 +250,7 @@ button:hover {
   color: #808080;
 }
 .search__button:active {
-  color: #252525;
+  color: #3f3d3d;
 }
 
 .nav-section {
@@ -537,4 +537,42 @@ button:hover {
 
 .copyrights {
   display: inline-block;
+}
+
+@media screen and (max-width: 1460px) {
+  body {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    width: 960px;
+    grid-gap: 1rem;
+  }
+
+  .cart {
+    font-size: 12px;
+  }
+
+  .nav-section__list-item-link {
+    padding: 15px 25px;
+  }
+
+  .product__button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .category__title {
+    top: 210px;
+    left: 25px;
+  }
+
+  .category__icon {
+    margin-left: 30px;
+  }
+
+  .category__link:hover .category__title {
+    top: 200px;
+    left: 40px;
+  }
 }

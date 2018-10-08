@@ -241,7 +241,7 @@ button{
     overflow: hidden;
 
     &:focus-within{
-        outline: #808080 auto 5px;
+        outline: $link-hover-color auto 5px;
     }
 
     &__input{
@@ -257,11 +257,10 @@ button{
 
         border: none;
         font-size: 1.4em;
-            // TODO: hardcoded color
-        color: #808080;
+        color: $link-hover-color;
 
         &:active{
-            color: #252525;
+            color: $text-color;
         }
     }
 }
@@ -620,7 +619,39 @@ button{
 }
 .copyrights{
     display: inline-block;
-    // margin-right: 50px;
+}
 
-    
+// TODO: adaptive
+@media screen and (max-width: 1460px){
+        //TODO header margin
+    body{
+        font-size: 14px;
+    }
+    .wrapper{
+        width: 960px;
+        grid-gap: 1rem;
+    }
+
+    .cart{
+        font-size: 12px;
+    }
+
+    .nav-section__list-item-link{
+        padding: 15px 25px;
+    }
+    .product__button{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .category__title{
+        top: 210px;
+        left: 25px;
+    }
+    .category__icon{
+        margin-left: 30px;
+    }
+    .category__link:hover .category__title{
+        top: 200px;
+        left: 40px;
+    }
 }
